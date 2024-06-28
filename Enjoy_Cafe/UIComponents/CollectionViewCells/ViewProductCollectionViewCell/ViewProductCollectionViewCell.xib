@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ViewProductCollectionViewCell" id="gTV-IL-0wX" customClass="ViewProductCollectionViewCell" customModule="Enjoy_Cafe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="230"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="230"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCG-Vp-iQe">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="230"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail04" translatesAutoresizingMaskIntoConstraints="NO" id="9M4-fO-FVh">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="aVJ-cH-tZf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqz-vw-txc">
+                                <rect key="frame" x="162" y="10" width="28" height="28"/>
+                                <color key="backgroundColor" name="CustomBG"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="cuE-Jh-uJe"/>
+                                    <constraint firstAttribute="height" constant="28" id="nBm-0b-FLf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="favIcon"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FPF-t1-Wcv">
+                                <rect key="frame" x="10" y="140" width="180" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Code: 1247" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIa-YH-ZrJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="9"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" name="TertiaryTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avocado Coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onG-N9-qI6">
+                                        <rect key="frame" x="0.0" y="14" width="180" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="q6S-oU-4tj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" name="PrimaryTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With Milk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbE-no-5Cv">
+                                        <rect key="frame" x="0.0" y="39" width="180" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="1jb-lS-5Ut"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" name="TertiaryTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUC-JO-yZP">
+                                        <rect key="frame" x="0.0" y="60" width="180" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5500 MMK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSj-LC-75v">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" name="PrimaryTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7X-Ch-RDe">
+                                                <rect key="frame" x="160" y="0.0" width="20" height="20"/>
+                                                <color key="backgroundColor" name="PrimaryColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="V82-lF-Kkd"/>
+                                                    <constraint firstAttribute="width" constant="20" id="XhN-qz-FvK"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system">
+                                                    <color key="baseForegroundColor" name="BtnTextColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="SecondaryViewColor"/>
+                        <constraints>
+                            <constraint firstItem="FPF-t1-Wcv" firstAttribute="leading" secondItem="vCG-Vp-iQe" secondAttribute="leading" constant="10" id="2Gm-4Y-Gi9"/>
+                            <constraint firstAttribute="trailing" secondItem="FPF-t1-Wcv" secondAttribute="trailing" constant="10" id="2St-fX-HJR"/>
+                            <constraint firstItem="9M4-fO-FVh" firstAttribute="leading" secondItem="vCG-Vp-iQe" secondAttribute="leading" id="JtT-Nk-Fjx"/>
+                            <constraint firstItem="Mqz-vw-txc" firstAttribute="top" secondItem="vCG-Vp-iQe" secondAttribute="top" constant="10" id="ZMs-va-TNl"/>
+                            <constraint firstItem="FPF-t1-Wcv" firstAttribute="top" secondItem="9M4-fO-FVh" secondAttribute="bottom" constant="10" id="ZjB-VL-eur"/>
+                            <constraint firstAttribute="bottom" secondItem="FPF-t1-Wcv" secondAttribute="bottom" constant="10" id="Zld-kf-X8g"/>
+                            <constraint firstItem="9M4-fO-FVh" firstAttribute="top" secondItem="vCG-Vp-iQe" secondAttribute="top" id="cqy-Ag-Zh8"/>
+                            <constraint firstAttribute="trailing" secondItem="9M4-fO-FVh" secondAttribute="trailing" id="il7-T7-dYE"/>
+                            <constraint firstAttribute="trailing" secondItem="Mqz-vw-txc" secondAttribute="trailing" constant="10" id="mg9-w2-yhM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="vCG-Vp-iQe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AD8-ZS-qbt"/>
+                <constraint firstAttribute="bottom" secondItem="vCG-Vp-iQe" secondAttribute="bottom" id="BbX-lj-CSF"/>
+                <constraint firstAttribute="trailing" secondItem="vCG-Vp-iQe" secondAttribute="trailing" id="hIb-BK-enQ"/>
+                <constraint firstItem="vCG-Vp-iQe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kpw-eq-m5E"/>
+            </constraints>
+            <size key="customSize" width="179" height="156"/>
+            <connections>
+                <outlet property="addToCartButton" destination="v7X-Ch-RDe" id="Hbw-2A-gDk"/>
+                <outlet property="favButton" destination="Mqz-vw-txc" id="158-Oo-v0q"/>
+                <outlet property="productCodeLabel" destination="BIa-YH-ZrJ" id="B2V-ro-RPk"/>
+                <outlet property="productDetailLabel" destination="pbE-no-5Cv" id="uJU-bX-Toe"/>
+                <outlet property="productImageView" destination="9M4-fO-FVh" id="jvE-Pk-UN1"/>
+                <outlet property="productNameLabel" destination="onG-N9-qI6" id="72a-LW-IaR"/>
+                <outlet property="productPriceLabel" destination="gSj-LC-75v" id="c4l-Xa-nAA"/>
+            </connections>
+            <point key="canvasLocation" x="190.83969465648855" y="55.633802816901408"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="detail04" width="156" height="113"/>
+        <image name="favIcon" width="24" height="24"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="BtnTextColor">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomBG">
+            <color red="0.87800002098083496" green="0.87800002098083496" blue="0.87800002098083496" alpha="0.61000001430511475" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryColor">
+            <color red="0.40000000596046448" green="0.20000000298023224" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryTextColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryViewColor">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TertiaryTextColor">
+            <color red="0.31799998879432678" green="0.31799998879432678" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
